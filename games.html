@@ -108,7 +108,8 @@
             'players': game['players'],
             'maxplayers': game['maxplayers'],
             'spectators': game['spectators'],
-        }); 
+            'protected': game['protected'],
+        });
         }
         return groups;
     }
@@ -162,7 +163,7 @@
             headerContent.append('<span>&nbsp;&mdash;&nbsp;' + group['players'] + '&nbsp;' + players + '</span>');
             }
 
-            // header.append(headerContent) 
+            // header.append(headerContent)
             $('#serverlist').append(header);
 
             var gameOrder = Object.keys(group['games']).sort(function (a, b) {
@@ -201,13 +202,13 @@
                 case 1:
                 if (game['players'] > 0)
                 {
-                state = 'Waiting';
-                stateClass = 'gameWaiting';
+                    state = 'Waiting';
+                    stateClass = 'gameWaiting';
                 }
                 else
                 {
-                state = 'Empty';
-                stateClass = 'gameEmpty';
+                    state = 'Empty';
+                    stateClass = 'gameEmpty';
                 }
                 break;
             }
@@ -217,6 +218,8 @@
             nameCell.attr('title', game['address']);
             var nameContents = $('<span class="ellipsis">');
             nameContents.text(game['name']);
+            if (game['protected'])
+                nameContents.prepend("&#128274; ");
             nameCell.append(nameContents);
             row.append(nameCell);
 
