@@ -157,7 +157,8 @@ main {
 
 .heroDescription {
   font-size: 1.3rem;
-  max-width: 80%;
+  max-width: 100%;
+  text-align: center;
 }
 
 .heroChild {
