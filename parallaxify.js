@@ -1,4 +1,7 @@
-// GPL 2.0 by Carson Burke
+// Unlicensed by Carson Burke @MarvinTMB
+
+// Not exactly the most efficient parallax implementation, but it should work fine enough
+// Use (css) classes parallaxify for <img /> tags, and parallaxifyBg for background images 
 
 window.addEventListener("load", parallax)
 window.addEventListener("scroll", parallax)
