@@ -1,5 +1,5 @@
 * {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-family: Poppins, arial, freesans, clean, sans-serif;
   padding: unset;
   margin: unset;
   --primary: #384896;
@@ -7,6 +7,7 @@
   --background1: rgb(57, 62, 64);
   --background2: rgb(48, 52, 54);
   --background3: rgb(42, 45, 47);
+  --background4: rgb(30, 32, 35);
   --box-shadow: rgba(0, 0, 0, 0.16) 0 6px 22px 0;
   --border-radius: 12px;
   scroll-behavior: smooth;
@@ -20,6 +21,24 @@ body {
 
 main {
   min-height: 100vh;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background1);
 }
 
 /* Animations */
@@ -127,7 +146,7 @@ main {
 
 /* Hero */
 
-.heroParent {
+.heroContainer {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
     url("images/web/gameplay_1.png");
@@ -135,11 +154,19 @@ main {
   background-position: center;
   min-height: 100vh;
   background-size: cover;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroParent {
   display: flex;
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
   width: 100%;
+  flex: 2;
+  justify-content: center;
 }
 
 .heroHeader {
@@ -176,10 +203,89 @@ main {
   backdrop-filter: blur(4px);
 }
 
+/* Overview */
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url("images/web/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overviewLeft {
+  width: 85%;
+}
+
+.overviewRight {
+  width: 85%;
+  margin-left: auto;
+}
+
+.overviewParent {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 4px 25px 0;
+  background: linear-gradient(to bottom, var(--background1), var(--background2));
+}
+
+@media (max-width: 700px) {
+  .overviewParent {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+  }
+}
+
+.overviewInverse {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 700px) {
+  .overviewInverse {
+    flex-direction: column;
+  }
+}
+
+.overviewImage {
+  width: 80%;
+  max-height: 55vh;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .overviewImage {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 4px 25px 0;
+    border-radius: var(--border-radius);
+    margin: auto 0;
+  }
+}
+
+
+.overviewContent {
+  padding: 16px;
+}
+
+@media (max-width: 700px) {
+  .overviewContent {
+    padding: 0;
+  }
+}
+
 /* Showcase */
 
 .showcaseImage {
   width: 80%;
+  max-height: 50vh;
+  object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.25) 0 4px 25px 0;
   border-radius: var(--border-radius);
 }
@@ -190,7 +296,7 @@ main {
   justify-content: center;
 }
 
-.showcaseParent {
+.showcaseChild {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,7 +371,7 @@ main {
 }
 
 .h2 {
-  font-size: 1.9rem;
+  font-size: 2.1rem;
 }
 
 .h3 {
@@ -276,13 +382,17 @@ main {
   font-size: 1.1rem;
 }
 
+.headerSoft {
+ font-weight: 400; 
+}
+
 .p1 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
 .p2 {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 400;
 }
 
@@ -426,4 +536,18 @@ main {
 
 .background3 {
   background-color: var(--background3);
+}
+
+.background2To1 {
+  background: linear-gradient(to bottom, var(--background2), var(--background1));
+}
+
+.imageToSolid {
+  padding: 32px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+.solidToImage {
+  padding: 32px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
