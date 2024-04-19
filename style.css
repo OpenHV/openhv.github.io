@@ -7,6 +7,7 @@
   --background1: rgb(57, 62, 64);
   --background2: rgb(48, 52, 54);
   --background3: rgb(42, 45, 47);
+  --background4: rgb(30, 32, 35);
   --box-shadow: rgba(0, 0, 0, 0.16) 0 6px 22px 0;
   --border-radius: 12px;
   scroll-behavior: smooth;
@@ -20,6 +21,24 @@ body {
 
 main {
   min-height: 100vh;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background1);
 }
 
 /* Animations */
