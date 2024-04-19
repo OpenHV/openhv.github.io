@@ -1,4 +1,4 @@
-// Unlicensed by Carson Burke @MarvinTMB
+// Licensed under MIT by Carson Burke @MarvinTMB
 
 // Not exactly the most efficient parallax implementation, but it should work fine enough
 // Use (css) classes parallaxify for <img /> tags, and parallaxifyBg for background images 
