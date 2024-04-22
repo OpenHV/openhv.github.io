@@ -426,7 +426,7 @@ main {
 
 @media (max-width: 700px) {
   .rowCollapsibleInverse {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
