@@ -2,8 +2,8 @@
   font-family: Poppins, arial, freesans, clean, sans-serif;
   padding: unset;
   margin: unset;
-  --primary: #384896;
-  --primaryLight: #8196ff;
+  --primary: #2e5793;
+  --primaryLight: #4870ad;
   --background1: rgb(57, 62, 64);
   --background2: rgb(48, 52, 54);
   --background3: rgb(42, 45, 47);
@@ -386,7 +386,7 @@ main {
 }
 
 .headerSoft {
- font-weight: 400; 
+ font-weight: 400;
 }
 
 .p1 {
