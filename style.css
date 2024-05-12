@@ -150,7 +150,7 @@ main {
 .heroContainer {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
-    url("images/web/gameplay1-min.png");
+    url("images/gameplay1-min.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
@@ -212,7 +212,7 @@ main {
   gap: 64px;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
-    url("images/web/map-min.png");
+    url("images/map-min.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
