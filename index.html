@@ -109,23 +109,57 @@
                             href="https://openhv.itch.io/openhv">OpenHV</a></iframe>
                 </div>
                 <div class="showcaseChild">
-                    <div class="column centerColumn gapMedium container background2 paddingMedium">
-                        <h4 class="h4">All download options</h4>
-                        <div class="gapSmall column centerColumn">
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://openhv.itch.io/openhv">itch.io</a>
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://github.com/OpenHV/OpenHV/releases/">GitHub</a>
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://flathub.org/apps/details/io.github.openhv.OpenHV">Flathub</a>
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://snapcraft.io/openhv">Snapcraft</a>
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://aur.archlinux.org/packages/openhv">AUR</a>
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://chocolatey.org/packages/openhv">Chocolatey</a>
-                            <a target="_blank" class="buttonPrimary width100"
-                                href="https://hub.docker.com/r/openhv/server">Docker</a>
+                    <div class="centerColumn gapMedium container background2 paddingMedium">
+
+                        <input type="radio" name="os" id="linux" class="linux">
+                        <label for="linux">Linux</label>
+
+                        <input type="radio" name="os" id="mac" class="mac">
+                        <label for="mac">macOS</label>
+
+                        <input type="radio" name="os" id="windows" class="windows">
+                        <label for="windows">Windows</label>
+
+                        <div class="osSwitcher">
+                            <div class="column centerColumn paddingMedium">
+                                <p>Available from:</p>
+                                <div class="macDownloads gapSmall textCenter">
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://openhv.itch.io/openhv">itch.io</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://github.com/OpenHV/OpenHV/releases/">GitHub</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://hub.docker.com/r/openhv/server">Docker</a>
+                                </div>
+
+                                <div class="windowsDownloads">
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://openhv.itch.io/openhv">itch.io</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://github.com/OpenHV/OpenHV/releases/">GitHub</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://chocolatey.org/packages/openhv">Chocolatey</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://winstall.app/apps/OpenHV.OpenHV">Winget</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://hub.docker.com/r/openhv/server">Docker</a>
+                                </div>
+
+                                <div class="linuxDownloads">
+                                    <a target="_blank" class="buttonPrimary"
+                                    href="https://openhv.itch.io/openhv">itch.io</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://github.com/OpenHV/OpenHV/releases/">GitHub</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://flathub.org/apps/details/io.github.openhv.OpenHV">Flathub</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://snapcraft.io/openhv">Snapcraft</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://aur.archlinux.org/packages/openhv">AUR</a>
+                                    <a target="_blank" class="buttonPrimary"
+                                        href="https://hub.docker.com/r/openhv/server">Docker</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
