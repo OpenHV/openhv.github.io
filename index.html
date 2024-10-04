@@ -243,6 +243,18 @@
     </footer>
 
     <script type="text/javascript" src="scripts/parallaxify.js"></script>
+    <script>
+        window.onload = function() {
+            var userPlatform = navigator.platform.toLowerCase();
+            if (userPlatform.includes('linux')) {
+                document.querySelector('.linux').checked = true;
+            } else if (userPlatform.includes('mac') || userPlatform.includes('darwin')) {
+                document.querySelector('.mac').checked = true;
+            } else if (userPlatform.includes('win')) {
+                document.querySelector('.windows').checked = true;
+            }
+        };
+    </script>
 </body>
 
 </html>
